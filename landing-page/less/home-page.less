@@ -1,80 +1,87 @@
-.banner-wrapper {
-  height: 100vh;
+header {
+  box-sizing: border-box;
   display: flex;
-  @media @mobile {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  justify-content: center;
+  position: absolute;
+  height: 10vh;
+  width: 100%;
 }
-.banner-left-container {
-  display: flex;
-  align-items: center;
-  width: 40%;
-  img {
-    margin: 0 0 14% 18%;
-    @media @mobile {
-      margin: 0 auto;
+nav {
+  width: 100%;
+  ul {
+    font-family: @primary-font;
+    margin: 2% auto;
+    display: flex;
+    justify-content: space-around;
+    max-width: 60%;
+    a {
+      color: @primary-white;
+      text-decoration: none;
+      font-size: 1.8rem;
+      margin: 2%;
     }
   }
 }
-.banner-right-container {
+.banner-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  background-image: url("/landing-page/img/landing4.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  .intro-container {
+    color: @primary-white;
+    margin: 0 auto;
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      margin-top: 2%;
+      font-size: 2rem;
+    }
+  }
+}
+.feature-container {
+  margin: 10% auto 0 auto;
+  padding-bottom: 5%;
+  line-height: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 60%;
-  @media @mobile {
-    width: 80%;
-    text-align: center;
+  text-align: center;
+  color: @primary-white;
+  width: 80%;
+  border-bottom: 1px solid @primary-white;
+  p {
+    font-family: @secondary-font;
   }
-  h1 {
-    @media @tablet {
-      font-size: 3rem;
-    }
-    @media @in-between {
-      font-size: 2.4rem;
-    }
-    @media @mobile {
-      font-size: 1.8rem;
-    }
+}
+.team-heading {
+  color: @primary-white;
+  text-align: center;
+}
+.team-container {
+  margin: 0 auto;
+  width: 80%;
+  border-top: 1px solid @primary-white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .dev-container {
+    background: @primary-white;
+    width: 30%;
+    margin: 10%;
   }
-  h2 {
-    margin: 5% 0 5% 0;
-    font-size: 2rem;
-    @media @tablet {
-      font-size: 1.6rem;
-    }
-    @media @in-between {
-      font-size: 1.2rem;
-    }
-    @media @mobile {
-      font-size: 1rem;
-    }
-  }
-  .button-container {
-    display: flex;
-    justify-content: center;
-    width: 26%;
-    font-size: 1.7rem;
-    padding: 2.8%;
-    display: flex;
-    border-radius: 5px;
-    background-image: linear-gradient(to right, #BBD2FE; #BEF8FE;);
-    @media @tablet {
-      font-size: 1.5rem;
-    }
-    @media @in-between {
-      font-size: 1.1rem;
-    }
-    @media @mobile {
-      margin: 0 auto;
-      width: 33%;
-      font-size: 0.8rem;
-    }
-  }
-  a {
-    color: #8568ac;
-    text-align: center;
-    text-decoration: none;
-  }
+}
+.team-heading-container {
+  margin: 6% auto;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: @primary-white;
+  width: 80%;
 }
