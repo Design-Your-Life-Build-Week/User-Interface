@@ -182,9 +182,7 @@ body {
   width: 40%;
 }
 .banner-left-container img {
-  position: absolute;
-  bottom: 10%;
-  left: 10%;
+  margin: 0 0 14% 18%;
 }
 .banner-right-container {
   display: flex;
@@ -199,7 +197,7 @@ body {
 .banner-right-container .button-container {
   justify-content: center;
   width: 26%;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   padding: 2.8%;
   display: flex;
   border-radius: 5px;
