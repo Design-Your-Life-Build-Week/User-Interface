@@ -1,6 +1,5 @@
 .team-banner-container {
-  display: flex;
-  justify-content: flex-end;
+  .end-flex();
   align-items: center;
   text-align: center;
   background-image: linear-gradient(to bottom, transparent 75%, white 100%),
@@ -12,8 +11,7 @@
     color: @primary-white;
     margin: 0 auto;
     padding-top: 10%;
-    display: flex;
-    flex-direction: column;
+    .center-column-flex();
     animation: moveDown 1s ease-in-out 0.2s backwards;
     @media @mobile {
       h1 {
@@ -39,9 +37,7 @@
 .team-heading-container {
   margin: 6% auto;
   line-height: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  .center-column-flex();
   text-align: center;
   width: 80%;
   .team-heading {
@@ -60,9 +56,8 @@
   align-items: center;
   flex-wrap: wrap;
   .dev-container {
-    display: flex;
+    .end-flex();
     flex-direction: column;
-    justify-content: flex-end;
     width: 31%;
     margin: 3% 1%;
     border-radius: 4px;
@@ -75,8 +70,7 @@
       width: 90%;
     }
     .img-container {
-      display: flex;
-      justify-content: center;
+      .flex-center();
       margin: 0 auto;
       width: 60%;
       img {
@@ -87,6 +81,7 @@
     .intro-container {
       text-align: center;
       margin: 2%;
+      font-family: @primary-font;
       h1 {
         font-size: 2rem;
       }
@@ -99,16 +94,15 @@
       h4 {
         font-size: 1.4rem;
       }
-      h5 {
-        font-size: 1.2rem;
+      p {
+        font-family: @secondary-font;
       }
     }
     .social-icons {
       margin: 4% auto 0;
       width: 60%;
       height: 100%;
-      display: flex;
-      justify-content: flex-end;
+      .flex-center();
     }
     .social-github {
       margin-right: 2%;
@@ -152,6 +146,7 @@
     .intro-container {
       text-align: center;
       margin: 2%;
+      font-family: @primary-font;
       h1 {
         font-size: 2rem;
         margin-bottom: 2%;
@@ -159,13 +154,15 @@
       h2 {
         font-size: 1.8rem;
       }
+      p {
+        font-family: @secondary-font;
+      }
     }
     .social-icons {
       margin: 4% auto 0;
       width: 60%;
       height: 100%;
-      display: flex;
-      justify-content: flex-end;
+      .flex-center();
       align-items: flex-end;
     }
     .social-github {
