@@ -31,10 +31,9 @@
     }
   }
 }
-.the-team {
-  max-width: 1200px;
-  display: flex;
-  justify-content: center;
+.team-wrapper {
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 .team-heading-container {
@@ -52,54 +51,6 @@
     padding-bottom: 10%;
   }
 }
-.team-container {
-  margin: 0 auto;
-  width: 80%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  .dev-container {
-    width: 30%;
-    margin: 3% 1%;
-    border-radius: 4px;
-    background-image: linear-gradient(to right, #bbd2fe 0%, #bef7fe 100%);
-    box-shadow: 5px 5px 10px #000000;
-    @media @tablet {
-      width: 45%;
-    }
-    @media @mobile {
-      width: 90%;
-    }
-    .img-container {
-      margin: 10% auto;
-      width: 75%;
-      img {
-        border-radius: 50%;
-        padding: 10%;
-      }
-    }
-    .intro-container {
-      text-align: center;
-      margin: 5%;
-      h1 {
-        font-size: 2rem;
-        margin-bottom: 10%;
-      }
-    }
-    .social-icons {
-      margin: 0 auto;
-      width: 80%;
-      display: flex;
-      justify-content: space-around;
-    }
-    .social-github {
-      width: 15%;
-    }
-    .social-linkedin {
-      width: 15%;
-    }
-  }
-}
 .tl-container {
   margin: 0 auto;
   width: 80%;
@@ -108,13 +59,11 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  .pm-header {
-    margin-top: 5%;
-    text-align: center;
-    color: @primary-black;
-  }
   .dev-container {
-    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 31%;
     margin: 3% 1%;
     border-radius: 4px;
     background-image: linear-gradient(to right, #bbd2fe 0%, #bef7fe 100%);
@@ -128,32 +77,103 @@
     .img-container {
       display: flex;
       justify-content: center;
-      margin: 10% auto;
-      width: 75%;
+      margin: 0 auto;
+      width: 60%;
       img {
-        margin: 0 auto;
+        margin: 8% auto;
         border-radius: 50%;
-        padding: 10%;
       }
     }
     .intro-container {
       text-align: center;
-      margin: 5%;
+      margin: 2%;
       h1 {
         font-size: 2rem;
-        margin-bottom: 10%;
+      }
+      h2 {
+        font-size: 1.8rem;
+      }
+      h3 {
+        font-size: 1.6rem;
+      }
+      h4 {
+        font-size: 1.4rem;
+      }
+      h5 {
+        font-size: 1.2rem;
       }
     }
     .social-icons {
-      margin: 0 auto;
-      width: 80%;
+      margin: 4% auto 0;
+      width: 60%;
+      height: 100%;
       display: flex;
-      justify-content: space-around;
+      justify-content: flex-end;
     }
     .social-github {
+      margin-right: 2%;
       width: 15%;
     }
     .social-linkedin {
+      margin-left: 2%;
+      width: 15%;
+    }
+  }
+}
+.team-container {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .dev-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 31%;
+    margin: 3% 1%;
+    border-radius: 4px;
+    background-image: linear-gradient(to right, #bbd2fe 0%, #bef7fe 100%);
+    box-shadow: 5px 5px 10px #000000;
+    @media @tablet {
+      width: 45%;
+    }
+    @media @mobile {
+      width: 90%;
+    }
+    .img-container {
+      margin: 0 auto;
+      width: 60%;
+      img {
+        margin: 8% auto;
+        border-radius: 50%;
+      }
+    }
+    .intro-container {
+      text-align: center;
+      margin: 2%;
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 2%;
+      }
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+    .social-icons {
+      margin: 4% auto 0;
+      width: 60%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+    .social-github {
+      margin-right: 2%;
+      width: 15%;
+    }
+    .social-linkedin {
+      margin-left: 2%;
       width: 15%;
     }
   }

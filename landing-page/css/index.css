@@ -379,10 +379,9 @@ nav ul a {
     font-size: 1.6rem;
   }
 }
-.the-team {
-  max-width: 1200px;
-  display: flex;
-  justify-content: center;
+.team-wrapper {
+  margin: 0 auto;
+  max-width: 1400px;
 }
 .team-heading-container {
   margin: 6% auto;
@@ -399,58 +398,6 @@ nav ul a {
   border-bottom: 1px solid black;
   padding-bottom: 10%;
 }
-.team-container {
-  margin: 0 auto;
-  width: 80%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.team-container .dev-container {
-  width: 30%;
-  margin: 3% 1%;
-  border-radius: 4px;
-  background-image: linear-gradient(to right, #bbd2fe 0%, #bef7fe 100%);
-  box-shadow: 5px 5px 10px #000000;
-}
-@media (max-width: 800px) {
-  .team-container .dev-container {
-    width: 45%;
-  }
-}
-@media (max-width: 500px) {
-  .team-container .dev-container {
-    width: 90%;
-  }
-}
-.team-container .dev-container .img-container {
-  margin: 10% auto;
-  width: 75%;
-}
-.team-container .dev-container .img-container img {
-  border-radius: 50%;
-  padding: 10%;
-}
-.team-container .dev-container .intro-container {
-  text-align: center;
-  margin: 5%;
-}
-.team-container .dev-container .intro-container h1 {
-  font-size: 2rem;
-  margin-bottom: 10%;
-}
-.team-container .dev-container .social-icons {
-  margin: 0 auto;
-  width: 80%;
-  display: flex;
-  justify-content: space-around;
-}
-.team-container .dev-container .social-github {
-  width: 15%;
-}
-.team-container .dev-container .social-linkedin {
-  width: 15%;
-}
 .tl-container {
   margin: 0 auto;
   width: 80%;
@@ -460,13 +407,11 @@ nav ul a {
   align-items: center;
   flex-wrap: wrap;
 }
-.tl-container .pm-header {
-  margin-top: 5%;
-  text-align: center;
-  color: black;
-}
 .tl-container .dev-container {
-  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 31%;
   margin: 3% 1%;
   border-radius: 4px;
   background-image: linear-gradient(to right, #bbd2fe 0%, #bef7fe 100%);
@@ -485,31 +430,106 @@ nav ul a {
 .tl-container .dev-container .img-container {
   display: flex;
   justify-content: center;
-  margin: 10% auto;
-  width: 75%;
+  margin: 0 auto;
+  width: 60%;
 }
 .tl-container .dev-container .img-container img {
-  margin: 0 auto;
+  margin: 8% auto;
   border-radius: 50%;
-  padding: 10%;
 }
 .tl-container .dev-container .intro-container {
   text-align: center;
-  margin: 5%;
+  margin: 2%;
 }
 .tl-container .dev-container .intro-container h1 {
   font-size: 2rem;
-  margin-bottom: 10%;
+}
+.tl-container .dev-container .intro-container h2 {
+  font-size: 1.8rem;
+}
+.tl-container .dev-container .intro-container h3 {
+  font-size: 1.6rem;
+}
+.tl-container .dev-container .intro-container h4 {
+  font-size: 1.4rem;
+}
+.tl-container .dev-container .intro-container h5 {
+  font-size: 1.2rem;
 }
 .tl-container .dev-container .social-icons {
+  margin: 4% auto 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.tl-container .dev-container .social-github {
+  margin-right: 2%;
+  width: 15%;
+}
+.tl-container .dev-container .social-linkedin {
+  margin-left: 2%;
+  width: 15%;
+}
+.team-container {
   margin: 0 auto;
   width: 80%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
-.tl-container .dev-container .social-github {
+.team-container .dev-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 31%;
+  margin: 3% 1%;
+  border-radius: 4px;
+  background-image: linear-gradient(to right, #bbd2fe 0%, #bef7fe 100%);
+  box-shadow: 5px 5px 10px #000000;
+}
+@media (max-width: 800px) {
+  .team-container .dev-container {
+    width: 45%;
+  }
+}
+@media (max-width: 500px) {
+  .team-container .dev-container {
+    width: 90%;
+  }
+}
+.team-container .dev-container .img-container {
+  margin: 0 auto;
+  width: 60%;
+}
+.team-container .dev-container .img-container img {
+  margin: 8% auto;
+  border-radius: 50%;
+}
+.team-container .dev-container .intro-container {
+  text-align: center;
+  margin: 2%;
+}
+.team-container .dev-container .intro-container h1 {
+  font-size: 2rem;
+  margin-bottom: 2%;
+}
+.team-container .dev-container .intro-container h2 {
+  font-size: 1.8rem;
+}
+.team-container .dev-container .social-icons {
+  margin: 4% auto 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.team-container .dev-container .social-github {
+  margin-right: 2%;
   width: 15%;
 }
-.tl-container .dev-container .social-linkedin {
+.team-container .dev-container .social-linkedin {
+  margin-left: 2%;
   width: 15%;
 }
