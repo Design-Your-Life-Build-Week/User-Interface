@@ -210,6 +210,9 @@ nav ul a {
   padding-top: 10%;
   display: flex;
   flex-direction: column;
+  animation: moveDown 0.6s ease-in-out 0.2s backwards;
+  overflow-y: smooth;
+  scroll-behavior: smooth;
 }
 .banner-container .intro-container h2 {
   margin-top: 2%;
@@ -302,6 +305,16 @@ nav ul a {
   font-size: 2rem;
   border-top: 1px solid black;
   background: rgba(0, 0, 0, 0.33);
+}
+@keyframes moveDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 .team-banner-container {
   display: flex;
