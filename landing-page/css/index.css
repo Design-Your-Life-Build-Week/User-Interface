@@ -223,9 +223,6 @@ nav ul a {
   background-image: linear-gradient(to right, #bbd2fe 0%, #bef7fe 100%);
   box-shadow: 2px 2px 6px #000000;
 }
-.banner-container .banner-btn:hover {
-  background-position: right center;
-}
 .banner-container .banner-btn a {
   text-decoration: none;
 }
@@ -239,6 +236,7 @@ nav ul a {
   text-align: center;
   color: black;
   width: 80%;
+  max-width: 1200px;
   border-bottom: 1px solid black;
 }
 .feature-container p {
@@ -262,7 +260,7 @@ nav ul a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  max-width: 50%;
 }
 .form-container form {
   padding: 5%;
@@ -272,6 +270,7 @@ nav ul a {
   flex-wrap: wrap;
   align-items: center;
   box-shadow: 5px 5px 10px #000000;
+  border-radius: 5px;
 }
 .form-container .name-email-container {
   display: flex;
@@ -282,7 +281,7 @@ nav ul a {
   padding: 1% 0 1% 2%;
   border-radius: 5px;
   margin: 0 2%;
-  width: 30%;
+  width: 50%;
 }
 .form-container .message-container {
   display: flex;
@@ -302,6 +301,7 @@ nav ul a {
   font-family: "Prompt", sans-serif;
   font-size: 2rem;
   border-top: 1px solid black;
+  background: rgba(0, 0, 0, 0.33);
 }
 .team-banner-container {
   display: flex;
@@ -326,6 +326,7 @@ nav ul a {
   font-size: 2rem;
 }
 .the-team {
+  max-width: 1200px;
   display: flex;
   justify-content: center;
 }
@@ -341,11 +342,12 @@ nav ul a {
 .team-heading-container .team-heading {
   color: black;
   text-align: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 10%;
 }
 .team-container {
   margin: 0 auto;
   width: 80%;
-  border-top: 1px solid black;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -356,6 +358,16 @@ nav ul a {
   border-radius: 4px;
   background-image: linear-gradient(to right, #bbd2fe 0%, #bef7fe 100%);
   box-shadow: 5px 5px 10px #000000;
+}
+@media (max-width: 800px) {
+  .team-container .dev-container {
+    width: 45%;
+  }
+}
+@media (max-width: 500px) {
+  .team-container .dev-container {
+    width: 90%;
+  }
 }
 .team-container .dev-container .img-container {
   margin: 10% auto;
@@ -405,6 +417,16 @@ nav ul a {
   border-radius: 4px;
   background-image: linear-gradient(to right, #bbd2fe 0%, #bef7fe 100%);
   box-shadow: 5px 5px 10px #000000;
+}
+@media (max-width: 800px) {
+  .tl-container .dev-container {
+    width: 45%;
+  }
+}
+@media (max-width: 500px) {
+  .tl-container .dev-container {
+    width: 90%;
+  }
 }
 .tl-container .dev-container .img-container {
   display: flex;
