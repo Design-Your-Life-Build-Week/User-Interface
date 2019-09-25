@@ -182,11 +182,23 @@ nav {
   justify-content: flex-end;
   align-self: center;
 }
+@media (max-width: 500px) {
+  nav {
+    justify-content: center;
+  }
+}
 nav ul {
   display: flex;
   justify-content: flex-end;
   font-family: "Prompt", sans-serif;
   width: 60%;
+}
+@media (max-width: 500px) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
 nav ul a {
   color: #f2f2f2;
@@ -214,9 +226,19 @@ nav ul a {
   overflow-y: smooth;
   scroll-behavior: smooth;
 }
+@media (max-width: 500px) {
+  .banner-container .intro-container h1 {
+    font-size: 3rem;
+  }
+}
 .banner-container .intro-container h2 {
   margin-top: 2%;
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .banner-container .intro-container h2 {
+    font-size: 1.6rem;
+  }
 }
 .banner-container .banner-btn {
   margin: 0 auto;
@@ -343,9 +365,19 @@ nav ul a {
   flex-direction: column;
   animation: moveDown 1s ease-in-out 0.2s backwards;
 }
+@media (max-width: 500px) {
+  .team-banner-container .intro-container h1 {
+    font-size: 3rem;
+  }
+}
 .team-banner-container .intro-container h2 {
   margin-top: 2%;
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .team-banner-container .intro-container h2 {
+    font-size: 1.6rem;
+  }
 }
 .the-team {
   max-width: 1200px;

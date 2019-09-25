@@ -12,11 +12,19 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-self: center;
+  @media @mobile {
+    justify-content: center;
+  }
   ul {
     display: flex;
     justify-content: flex-end;
     font-family: @primary-font;
     width: 60%;
+    @media @mobile {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
     a {
       color: @primary-white;
       text-decoration: none;
@@ -44,9 +52,19 @@ nav {
     animation: moveDown 1s ease-in-out 0.2s backwards;
     overflow-y: smooth;
     scroll-behavior: smooth;
+    @media @mobile {
+      h1 {
+        font-size: 3rem;
+      }
+    }
     h2 {
       margin-top: 2%;
       font-size: 2rem;
+    }
+    @media @mobile {
+      h2 {
+        font-size: 1.6rem;
+      }
     }
   }
   .banner-btn {
